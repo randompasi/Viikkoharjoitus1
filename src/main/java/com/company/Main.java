@@ -3,6 +3,10 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
+
+
+
+
         //Tehtävä 2
         BMI luokka = new BMI();
         double bmi = luokka.calculateBMI(66,1.9);
