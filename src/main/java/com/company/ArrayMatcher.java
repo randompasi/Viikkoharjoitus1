@@ -16,6 +16,7 @@ public class ArrayMatcher {
                 if (A[row][col] == 1) {
                     if (row < B.length) {
                         if (col < B[row].length) {
+                            continue;
 
                         } else {
                             System.out.println("Colum too smal in new Array");
