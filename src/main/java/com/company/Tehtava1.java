@@ -9,8 +9,7 @@ public class Tehtava1 {
 
 
     /**
-     *@.pre FORALL(x : kiva; x > 0)
-     * @.post true
+     FORALL (int arvo; arvo<lottorivi.length; i++, lottorivi[arvo] < 0)
      */
     public boolean OnKiva(List<Integer> kiva){
                for(int arvo : kiva){
@@ -23,16 +22,16 @@ public class Tehtava1 {
 
     /**
      * 	Merkkijonossa syöte esiintyy merkki 'k'
-     * @.pre EXISTS(i : syöte ; i.equals ( " k "))
+     * @.pre EXISTS(i ; syöte ; i.contains( " k "))
      * @.post true
      */
     public  boolean isThereSmallCaseK(String syöte){
-         return syöte.indexOf('k') > -1;
+         return  syöte.indexOf('k') > -1;
     }
 
     /**
      Kokonaislukutaulukon lottorivi minimialkiolla ei ole duplikaatteja (so. se esiintyy taulukossa vain kerran).
-     @.pre FORALL (i,j :a; 0<=i<j<a.Length ==> a[i]!=a[j])
+     @.pre FORALL (i,j ; 0 <= i < a.Length && 0 <= j < a.Length && i != j && a[i] != a[j])
      @.post true
      */
     public boolean noDuplicateForLowestValue(List<Integer> lottorivi){
