@@ -13,7 +13,7 @@ public class BMI {
      * return true if bmi is under 18.5
      * @param bmi BMI index
      * @.pre bmi != null - will not work if bmi doesn't have value. Java will throw error if this happens and program will stop
-     * @.post RESULT == bmi < underwEight
+     * @.post RESULT == boolean
      *
      */
     public boolean isUnderWeight(double bmi){
@@ -24,8 +24,8 @@ public class BMI {
      * Calculates BMI with weight and height
      * @param paino needed to calculate BMI, value needs to be in kilograms
      * @param pituus neededto calculate BMI, value needs to in Meters
-     * @.pre paino != 0 && pituus != 0 - java cannoit calculate with zero and will throw arithmetic error if zero is used on arithmetic operation
-     * @.post RESULT == paino/(pituus*pituus) && RESULT > 0
+     * @.pre paino != 0 && pituus != 0 - java cannot calculate with zero and will throw arithmetic error if zero is used on arithmetic operation
+     * @.post RESULT == paino/(pituus*pituus) && RESULT > 0 && RESULT == double
      *
      */
     public double calculateBMI(double paino, double pituus){

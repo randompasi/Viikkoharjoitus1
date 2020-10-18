@@ -43,7 +43,7 @@ public class Tehtava1Tests {
     @Property
     public void kTest(@ForAll @AlphaChars String syote){
         Tehtava1 teht = new Tehtava1();
-        boolean result = teht.isThereSmallCaseK(syote);
+        boolean result = teht.isCaseK(syote);
 
         if(syote.indexOf('k') > -1) {
 

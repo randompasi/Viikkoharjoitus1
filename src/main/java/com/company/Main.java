@@ -3,11 +3,11 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
+//Tehtava 1
 
 
 
-
-        //Tehtävä 2
+        //Tehtava 2
         BMI luokka = new BMI();
         double bmi = luokka.calculateBMI(66,1.9);
         System.out.println(bmi);
@@ -18,7 +18,7 @@ public class Main {
 
         System.out.println("-------------------------------------------------------------------");
 
-        //Tehtävä 3
+        //Tehtava 3
 
         int[][]  A  =  {  {  0,  0, 1, 0, 0 },
                         { 0,  1, 1,  1,  0 },

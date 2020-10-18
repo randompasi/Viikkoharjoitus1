@@ -9,7 +9,8 @@ public class Tehtava1 {
 
 
     /**
-     FORALL (int arvo; arvo<kiva.length; i++, kiva[arvo] > 0)
+     @.pre   FORALL (int arvo; arvo<kiva.length; i++, kiva[arvo] > 0)
+     @.post true
      */
     public boolean OnKiva(List<Integer> kiva){
                for(int arvo : kiva){
@@ -31,7 +32,7 @@ public class Tehtava1 {
 
     /**
      Kokonaislukutaulukon lottorivi minimialkiolla ei ole duplikaatteja (so. se esiintyy taulukossa vain kerran).
-     @.pre FORALL (i,j ; 0 <= i < lottorivi.Length && 0 <= j < lottorivi.Length && i != j && lottorivi[i] != lottorivi[j])
+     @.pre FORALL (i,j ; 0 <= i < lottorivi.Length && 0 <= j < lottorivi.Length ; i != j && lottorivi[i] != lottorivi[j])
      @.post true
      */
     public boolean noDuplicateForLowestValue(List<Integer> lottorivi){
